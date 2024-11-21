@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App0.AddStaff"
+             Title="AddStaff">
+
+   
+
+    <StackLayout Padding="10" BackgroundColor="White">
+        <Entry Placeholder="Name" x:Name="NameEntry"/>
+        <Entry Placeholder="Phone" x:Name="PhoneEntry"/>
+        <Entry Placeholder="Department" x:Name="DepartmentEntry"/>
+        <Entry Placeholder="Address Street" x:Name="AddressStreetEntry"/>
+        <Entry Placeholder="Address City" x:Name="AddressCityEntry"/>
+        <Entry Placeholder="Address State" x:Name="AddressStateEntry"/>
+        <Entry Placeholder="Address Zip" x:Name="AddressZipEntry"/>
+        <Entry Placeholder="Address Country" x:Name="AddressCountryEntry"/>
+        <Button Text="Add Staff" Clicked="OnAddStaffClicked" BackgroundColor="DarkRed" BorderWidth="5" BorderColor="DarkGrey"/>
+    </StackLayout>
+</ContentPage>
