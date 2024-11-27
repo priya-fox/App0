@@ -13,11 +13,15 @@
         <ShellContent
         Title="Staff Page" 
             ContentTemplate="{DataTemplate local:MainPage}"
-            Route="MainPage" />
+            Route="MainPage"/>
         <ShellContent
         Title="Settings" 
             ContentTemplate="{DataTemplate local:LightDark}"
             Route="LightDark" />
+        <ShellContent 
+        Title="Brightness Settings" 
+        ContentTemplate="{DataTemplate local:Brightness}" />
+
     </TabBar>
 </Shell>
     

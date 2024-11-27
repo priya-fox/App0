@@ -1,19 +1,31 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App0.MainPage">
-     
-        <StackLayout Padding="10">
+
+    
+
+    <StackLayout Padding="10">
         <Button Text="Add New Staff" Clicked="OnAddStaffButtonClicked" BackgroundColor="DarkRed" BorderWidth="5" BorderColor="DarkGrey"/>
         <Button Text="Clear Database" Clicked="OnClearDatabaseButtonClicked" BackgroundColor="DarkRed" BorderWidth="5" BorderColor="DarkGrey"/>
 
-            <ListView x:Name="StaffListView" VerticalOptions="FillAndExpand" ItemSelected="OnStaffSelected" BackgroundColor="LightGrey">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Name}" Detail="{Binding Department}" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+
+        
+        <ListView x:Name="StaffListView" VerticalOptions="FillAndExpand" ItemSelected="OnStaffSelected" BackgroundColor="LightGrey">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Department}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Image>
+            <Image.Source>
+                <UriImageSource Uri= "Images/roi.jpeg" CachingEnabled="True">
+                </UriImageSource>
+            </Image.Source>
+        </Image>
+
+    </StackLayout>
     </ContentPage>
 
 

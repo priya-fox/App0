@@ -5,7 +5,7 @@
              x:Class="App0.LightDark">
 
     <StackLayout>
-        <Switch x:Name="ThemeSwitch" />
+        
         <Switch Toggled="OnThemeToggled" />
         <Label Text="Toggle Light/Dark Theme" />
         
